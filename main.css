@@ -29,23 +29,27 @@ main {
     padding: 2em;
 }
 
-#job-listings {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#job-listings li {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
+.job-listing {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#job-listings li:last-child {
-    border-bottom: none;
+.job-listing h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-#apply-button {
+.apply-button {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -54,6 +58,33 @@ main {
     cursor: pointer;
 }
 
-#apply-button:hover {
+.apply-button:hover {
+    background-color: #3e8e41;
+}
+
+.apply-form {
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
     background-color: #3e8e41;
 }
